@@ -1,0 +1,22 @@
+name: chrome-daily-run
+
+on: [push]
+jobs:
+  cypress-chrome-testing:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      # Install NPM dependencies, cache them correctly
+      # and run all Cypress tests
+      - name: Cypress run tests
+        uses: cypress-io/github-action@v4
+        timeout-minutes: 60
+        with:
+          browser: chrome
+          record: true
+          group: GH Action Chrome
+          #start: npm start
+        env:
+          # pass the Dashboard record key as an environment variable
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_DASHBOARDKEY }}
