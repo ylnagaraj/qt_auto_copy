@@ -7,7 +7,7 @@
     "cy:run": "npx cypress run",
     "cy:open": "node_modules\\.bin\\cypress open",
     "chromeTest": "npx cypress run --headed --browser chrome",
-    "firefoxTest": "npx cypress run --headed --browser firefox",
+    "firefoxTest": "npx cypress run --headed --browser firefox"
   },
   "keywords": [],
   "author": "Cybage Team",
