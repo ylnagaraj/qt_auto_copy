@@ -1,4 +1,4 @@
-name: Cypress Parallel Execution
+name: Cypress Parallel Execution (with secret key)
 
 on:  
   push: 
