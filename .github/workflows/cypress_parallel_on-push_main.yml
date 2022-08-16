@@ -1,9 +1,9 @@
 name: Cypress Parallel Execution
 
-on:  [fork]
- # push: 
-  #  branch:
-   #   - main
+on:  
+  push: 
+    branches:
+     - main
 
 jobs:
   parallel-run:
