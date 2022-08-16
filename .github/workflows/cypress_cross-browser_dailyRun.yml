@@ -1,6 +1,6 @@
 name: Cypress Cross-Browser Testing - DailyRun
 
-on: [push]
+on: [fork]
   #schedule:
      # UTC time is setup here i.e. 8:30 AM (daily) which is equal to 2:00 PM IST
     #- cron: '30 8 * * *'

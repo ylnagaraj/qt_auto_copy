@@ -1,9 +1,9 @@
 name: Cypress Parallel Execution (with secret key)
 
-on:  
-  push: 
-    branches:
-     - main
+on: [fork]
+  #push: 
+   # branches:
+    # - main
 
 jobs:
   parallel-run:
